@@ -8,7 +8,8 @@ module.exports = [
 {
   mode: "development",
   entry: {
-    index: "./js/index.js"
+    index: "./js/index.js",
+    index2: "./js/index2.js"
   },
   output: {
     path: dist,
@@ -32,6 +33,7 @@ module.exports = [
   output: {
     path: dist,
     filename: "[name].js",
+    publicPath: "http://localhost:8080/"
   },
   devServer: {
     contentBase: dist,
